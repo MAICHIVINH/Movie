@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MVC\\Movies_V1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|D:\\MVC\\Movies_V1\\movies_v1\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\views\\homepage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|D:\\MVC\\Movies_V1\\movies_v1\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\views\\shared\\_partialheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|d:\\mvc\\movies_v1\\movies_v1\\views\\shared\\_layouthomepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\views\\shared\\_layouthomepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|d:\\mvc\\movies_v1\\movies_v1\\views\\homepage\\_partialbanner.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\views\\homepage\\_partialbanner.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|d:\\mvc\\movies_v1\\movies_v1\\views\\homepage\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\views\\homepage\\_partialfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|d:\\mvc\\movies_v1\\movies_v1\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\controllers\\homepagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|d:\\mvc\\movies_v1\\movies_v1\\views\\homepage\\_partialbody.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\views\\homepage\\_partialbody.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|d:\\mvc\\movies_v1\\movies_v1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0136FD2F-6E7D-4170-938E-87FED4F4FC15}|Movies_V1\\Movies_V1.csproj|solutionrelative:movies_v1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_PartialFooter.cshtml",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\_PartialFooter.cshtml",
+              "RelativeDocumentMoniker": "Movies_V1\\Views\\HomePage\\_PartialFooter.cshtml",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\_PartialFooter.cshtml",
+              "RelativeToolTip": "Movies_V1\\Views\\HomePage\\_PartialFooter.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-28T15:16:59.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomePageController.cs",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Controllers\\HomePageController.cs",
+              "RelativeDocumentMoniker": "Movies_V1\\Controllers\\HomePageController.cs",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Controllers\\HomePageController.cs",
+              "RelativeToolTip": "Movies_V1\\Controllers\\HomePageController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T15:14:51.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Movies_V1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Movies_V1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-28T14:30:35.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_PartialBanner.cshtml",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\_PartialBanner.cshtml",
+              "RelativeDocumentMoniker": "Movies_V1\\Views\\HomePage\\_PartialBanner.cshtml",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\_PartialBanner.cshtml",
+              "RelativeToolTip": "Movies_V1\\Views\\HomePage\\_PartialBanner.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-28T14:30:26.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_PartialBody.cshtml",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\_PartialBody.cshtml",
+              "RelativeDocumentMoniker": "Movies_V1\\Views\\HomePage\\_PartialBody.cshtml",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\_PartialBody.cshtml",
+              "RelativeToolTip": "Movies_V1\\Views\\HomePage\\_PartialBody.cshtml",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAUwL0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-28T14:23:41.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_PartialHeader.cshtml",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\Shared\\_PartialHeader.cshtml",
+              "RelativeDocumentMoniker": "Movies_V1\\Views\\Shared\\_PartialHeader.cshtml",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\Shared\\_PartialHeader.cshtml",
+              "RelativeToolTip": "Movies_V1\\Views\\Shared\\_PartialHeader.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T20:14:18.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutHomePage.cshtml",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\Shared\\_LayoutHomePage.cshtml",
+              "RelativeDocumentMoniker": "Movies_V1\\Views\\Shared\\_LayoutHomePage.cshtml",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\Shared\\_LayoutHomePage.cshtml",
+              "RelativeToolTip": "Movies_V1\\Views\\Shared\\_LayoutHomePage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T20:14:14.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\Index.cshtml",
+              "RelativeDocumentMoniker": "Movies_V1\\Views\\HomePage\\Index.cshtml",
+              "ToolTip": "D:\\MVC\\Movies_V1\\Movies_V1\\Views\\HomePage\\Index.cshtml",
+              "RelativeToolTip": "Movies_V1\\Views\\HomePage\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T20:00:08.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
