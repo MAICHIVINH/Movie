@@ -10,7 +10,6 @@
         max-width: 900px;
     }
 
-    /* Căn giữa header các cột có dữ liệu căn giữa, tên phim để trái */
     .table thead th {
         vertical-align: middle;
     }
@@ -19,7 +18,6 @@
             text-align: center;
         }
 
-    /* Body các cột: mã phim, thể loại, năm sản xuất, thao tác căn giữa, tên phim để trái */
     .table tbody td {
         vertical-align: middle;
     }
@@ -28,14 +26,12 @@
             text-align: center;
         }
 
-    /* Màu nền hover nhẹ */
     .table tbody tr:hover {
         background-color: #e3f0ff;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
 
-    /* Nút thêm phim */
     .btn-primary {
         box-shadow: 0 4px 8px rgb(0 123 255 / 0.3);
         transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -50,20 +46,123 @@
         margin-right: 8px;
     }
 
-    /* Nút thao tác */
     .btn-sm {
         font-weight: 600;
         padding: 0.25rem 0.6rem;
         font-size: 0.85rem;
     }
 
-    /* Màu nền dòng chẵn */
     .table-striped > tbody > tr:nth-of-type(odd) {
         background-color: #f9fbff;
     }
 
     a {
         text-decoration: none !important;
+    }
+
+    /* Modal chính */
+    .modal-content {
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        animation: fadeInUp 0.3s ease;
+    }
+
+    .modal-header {
+        background-color: #004aad;
+        color: #fff;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .modal-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .modal-body {
+        background-color: #f8f9fa;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .modal-footer {
+        background-color: #f1f1f1;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .form-label {
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .form-control,
+    .selectpicker {
+        border-radius: 10px;
+        box-shadow: none;
+        transition: border-color 0.2s;
+    }
+
+    .form-control:focus,
+    .selectpicker:focus {
+        border-color: #004aad;
+        box-shadow: 0 0 0 0.2rem rgba(0, 74, 173, 0.25);
+    }
+
+    .form-check-label {
+        margin-left: 10px;
+    }
+
+    .btn {
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+    .btn-primary {
+        background-color: #004aad;
+        border-color: #004aad;
+    }
+
+    .btn-primary:hover {
+        background-color: #003a88;
+        border-color: #003a88;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+
+    /* Danh sách tập phim */
+    .tapPhimItem input {
+        border-radius: 6px;
+    }
+
+    /* Nút thêm tập phim */
+    #btnAddTapPhim {
+        margin-top: 10px;
     }
 </style>
 
@@ -143,11 +242,9 @@
         </tbody>
     </table>
 
-
     <!-- Modal Thêm phim -->
     <div class="modal fade" id="modalThemPhim" tabindex="-1" aria-labelledby="modalThemPhimLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <!-- modal lớn -->
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Thêm phim mới</h5>
@@ -183,7 +280,7 @@
                                 <input type="file" class="form-control" id="linkTrailer" />
                             </div>
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <label for="theLoai" class="form-label">Thể loại phim</label>
                                 <select class="selectpicker" id="theLoai" multiple data-live-search="true" title="Chọn thể loại phim">
                                     <option>Hành động</option>
@@ -195,27 +292,24 @@
 
                             </div>
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <label for="dienVien" class="form-label">Diễn viên</label>
-                                <select class="form-select" id="dienVien" multiple>
-                                    <!-- Thêm option diễn viên -->
+                                <select class="selectpicker" id="dienVien" multiple data-live-search="true" title="Chọn diễn viên">
                                     <option>Diễn viên 1</option>
                                     <option>Diễn viên 2</option>
                                     <option>Diễn viên 3</option>
-                                    <!-- Có thể load từ API -->
                                 </select>
                             </div>
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <label for="daoDien" class="form-label">Đạo diễn</label>
-                                <select class="form-select" id="daoDien" multiple>
-                                    <!-- Thêm option đạo diễn -->
+                                <select class="selectpicker" id="daoDien" multiple data-live-search="true" title="Chọn đạo diễn">
                                     <option>Đạo diễn 1</option>
                                     <option>Đạo diễn 2</option>
                                 </select>
                             </div>
 
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <label for="quocGia" class="form-label">Quốc gia</label>
                                 <select class="selectpicker" id="quocGia" multiple data-live-search="true" title="Chọn quốc gia">
                                     <option>Việt Nam</option>
@@ -258,58 +352,6 @@
         </div>
     </div>
 
-
-    <!-- Modal Sửa phim -->
-    <div class="modal fade" id="modalSuaPhim" tabindex="-1" aria-labelledby="modalSuaPhimLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Sửa thông tin phim</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Form sửa phim -->
-                    <form>
-                        <div class="mb-3">
-                            <label for="tenPhimSua" class="form-label">Tên phim</label>
-                            <input type="text" class="form-control" id="tenPhimSua" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="theLoaiSua" class="form-label">Thể loại</label>
-                            <input type="text" class="form-control" id="theLoaiSua" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="namSXSua" class="form-label">Năm sản xuất</label>
-                            <input type="number" class="form-control" id="namSXSua" />
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                    <button type="button" class="btn btn-success">Cập nhật</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Xóa phim -->
-    <div class="modal fade" id="modalXoaPhim" tabindex="-1" aria-labelledby="modalXoaPhimLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Xác nhận xóa</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-                </div>
-                <div class="modal-body">
-                    Bạn có chắc muốn xóa phim này không?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                    <button type="button" class="btn btn-danger">Xóa</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </div>
 
