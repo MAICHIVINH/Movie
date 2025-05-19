@@ -60,7 +60,6 @@
         text-decoration: none !important;
     }
 
-    /* Modal chính */
     .modal-content {
         border-radius: 15px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -155,12 +154,10 @@
         background-color: #5a6268;
     }
 
-    /* Danh sách tập phim */
     .tapPhimItem input {
         border-radius: 6px;
     }
 
-    /* Nút thêm tập phim */
     #btnAddTapPhim {
         margin-top: 10px;
     }
@@ -273,11 +270,11 @@
 
                             <div class="col-md-6">
                                 <label for="linkAnh" class="form-label">Link ảnh</label>
-                                <input type="file" class="form-control" id="linkAnh" />
+                                <input type="text" class="form-control" id="linkAnh" />
                             </div>
                             <div class="col-md-6">
                                 <label for="linkTrailer" class="form-label">Link trailer</label>
-                                <input type="file" class="form-control" id="linkTrailer" />
+                                <input type="text" class="form-control" id="linkTrailer" />
                             </div>
 
                             <div class="col-md-6">
@@ -352,7 +349,137 @@
         </div>
     </div>
 
+    <!--Modal sửa -->
+    <div class="modal fade" id="modalSuaPhim" tabindex="-1" aria-labelledby="modalSuaPhimLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cập nhật thông tin phim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formSuaPhim">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="tenPhim" class="form-label">Tên phim</label>
+                                <input type="text" class="form-control" id="tenPhim" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="thoiGianRaMat" class="form-label">Thời gian ra mắt</label>
+                                <input type="date" class="form-control" id="thoiGianRaMat" />
+                            </div>
 
+                            <div class="col-md-6">
+                                <label for="thoiLuong" class="form-label">Thời lượng phim (phút)</label>
+                                <input type="number" class="form-control" id="thoiLuong" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="ngonNgu" class="form-label">Ngôn ngữ</label>
+                                <input type="text" class="form-control" id="ngonNgu" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="linkAnh" class="form-label">Link ảnh</label>
+                                <input type="text" class="form-control" id="linkAnh" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="linkTrailer" class="form-label">Link trailer</label>
+                                <input type="text" class="form-control" id="linkTrailer" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="theLoai" class="form-label">Thể loại phim</label>
+                                <select class="selectpicker" id="theLoai" multiple data-live-search="true" title="Chọn thể loại phim">
+                                    <option>Hành động</option>
+                                    <option>Hài</option>
+                                    <option>Kinh dị</option>
+                                    <option>Tình cảm</option>
+                                    <option>Khoa học viễn tưởng</option>
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="dienVien" class="form-label">Diễn viên</label>
+                                <select class="selectpicker" id="dienVien" multiple data-live-search="true" title="Chọn diễn viên">
+                                    <option>Diễn viên 1</option>
+                                    <option>Diễn viên 2</option>
+                                    <option>Diễn viên 3</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="daoDien" class="form-label">Đạo diễn</label>
+                                <select class="selectpicker" id="daoDien" multiple data-live-search="true" title="Chọn đạo diễn">
+                                    <option>Đạo diễn 1</option>
+                                    <option>Đạo diễn 2</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="quocGia" class="form-label">Quốc gia</label>
+                                <select class="selectpicker" id="quocGia" multiple data-live-search="true" title="Chọn quốc gia">
+                                    <option>Việt Nam</option>
+                                    <option>Mỹ</option>
+                                    <option>Hàn Quốc</option>
+                                    <option>Nhật Bản</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12 mb-3 form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="phimBoSwitch" />
+                                <label class="form-check-label" for="phimBoSwitch">Phim bộ (nếu không tích là phim lẻ)</label>
+                            </div>
+
+                            <div class="col-md-12" id="linkPhimLeContainer">
+                                <label for="linkPhimLe" class="form-label">Link phim (Phim lẻ)</label>
+                                <input type="text" class="form-control" id="linkPhimLe" />
+                            </div>
+
+                            <div class="col-md-12 d-none" id="phimBoContainer">
+                                <label class="form-label">Danh sách tập phim</label>
+                                <div id="tapPhimList">
+                                    <div class="input-group mb-2 tapPhimItem">
+                                        <input type="text" class="form-control me-2" placeholder="Tên tập phim" />
+                                        <input type="text" class="form-control me-2" placeholder="Link tập phim" />
+                                        <button type="button" class="btn btn-danger btn-sm btnRemoveTap">Xóa</button>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-success btn-sm" id="btnAddTapPhim">+</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-warning">Cập nhật</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal xóa -->
+    <div class="modal fade" id="modalXoaPhim" tabindex="-1" aria-labelledby="modalXoaPhimLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xác nhận xóa phim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có chắc chắn muốn xóa phim <strong id="tenPhimXoa">Phim tên ABC</strong> không?</p>
+                    <!-- Ẩn thông tin mã phim để xử lý xóa -->
+                    <input type="hidden" id="maPhimXoa" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
