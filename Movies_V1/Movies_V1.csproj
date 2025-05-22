@@ -119,6 +119,7 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\QuanLyPhim.cshtml" />
     <Content Include="Views\Admin\QuanLyTaiKhoan.cshtml" />
+    <Content Include="Views\Admin\CategoryMovie.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
