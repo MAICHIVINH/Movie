@@ -165,14 +165,14 @@
 </style>
 
 <div class="container mt-4">
-    <!-- Thông báo -->
-    <div id="alertContainer" style="display: none;">
-        <div id="alertMessage" class="alert alert-success alert-dismissible fade show" role="alert">
-            <!-- Nội dung thông báo sẽ thay đổi bằng JavaScript -->
+    <!-- Thông báo nổi góc trên phải -->
+    <div id="alertContainer" style="position: fixed; top: 20px; right: 20px; z-index: 1050; display: none; min-width: 250px;">
+        <div id="alertMessage" class="alert alert-success alert-dismissible fade show shadow" role="alert">
             <span id="alertText">Thành công!</span>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Đóng"></button>
         </div>
     </div>
+
     <h2 class="mb-4">Quản lý thể loại phim</h2>
 
     <div class="row mb-3">
@@ -348,7 +348,12 @@
 
             // Lắng nghe thay đổi
             checkbox.addEventListener('change', function () {
-                label.textContent = this.checked ? 'Hiện' : 'Ẩn';
+                const isChecked = this.checked;
+                label.textContent = isChecked ? 'Hiện' : 'Ẩn';
+
+                // Hiển thị thông báo
+                const message = isChecked ? 'Trạng thái đang bật' : 'Trạng thái đang tắt';
+                showAlert(message, 'success');
             });
         });
     });
@@ -372,5 +377,4 @@
             alertContainer.style.display = 'none';
         }, 3000);
     }
-
 </script>
